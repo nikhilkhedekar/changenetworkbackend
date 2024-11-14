@@ -31,7 +31,7 @@ const register = async (req, res) => {
         verificationToken,
     });
     // const origin = "http://localhost:3000"//'http://localhost:8080';
-    const origin = "https://changenetworkfrontend.onrender.com/"
+    const origin = "https://changenetworkfrontend.onrender.com"
 
     // const newOrigin = 'https://react-node-user-workflow-front-end.netlify.app';
 
@@ -152,7 +152,7 @@ const forgotPassword = async (req, res) => {
         const passwordToken = crypto.randomBytes(70).toString('hex');
         // send email
         // const origin = 'http://localhost:3000';
-        const origin = "https://changenetworkfrontend.onrender.com/"
+        const origin = "https://changenetworkfrontend.onrender.com"
         await sendResetPasswordEmail({
             name: user.name,
             email: user.email,
